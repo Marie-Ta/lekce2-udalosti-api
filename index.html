@@ -9,23 +9,24 @@
 </head>
 <body>
 
-	<h1>Změna tříd, události</h1>
-
-	<div class="ctverecek zluty" onmouseover="secti(4,5)"></div>
-
-	<div class="ctverecek zeleny" onkeydown="console.log(event)"></div>
-
-	<input type="text" onkeyup="console.log(event)">
+	<h1>Úkol 2</h1>
 
 	<img class="obrazek" src="obrazky/kocka.jpg">
 
-	<button class="tlacitko">Čudlajs</button>
-
 	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
-	<button onclick="prehraj()">Přehraj písničku</button>
+	<button onclick="prehraj()">Přehraj</button>
 
-	<button onclick="zastav('#js-audio')">Stopni písničku</button>
+	<button onclick="zastav('#js-audio')">Pauzni</button>
+
+	<button onclick="ztis()">Ztišit</button>
+
+	<button onclick="hlasitostAkorat()">Hlasitost tak akorát</button>
+
+	<button onclick="hlasitostMax()">Hlasitost na maximum</button>
+
+	<button onclick="prehrajOdZacatku()">Přehraj od začátku</button>
+
 
 	<p class="muj_odstavec" onmouseover="priNajeti()">V elipse spí lev.</p>
 

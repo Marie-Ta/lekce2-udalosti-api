@@ -34,24 +34,40 @@ function zcervenej(){
 let vetsiPismo
 vetsiPismo=document.querySelector()
 */
-/**
- * Funkce, která přehraje předaný prvek
- * 
- * 
- */
+
+
+
+
+let audioElement = document.querySelector('#js-audio');
+
+// Funkce, která přehraje hudbu
 
 function prehraj() {
-    let audioElement = document.querySelector('#js-audio');
     audioElement.play();
 }
 
-/**
- * Funkce, která pozataví předaný prvek
- * 
- * @param {string} elementSelector 
- */
+// Funkce, která pozastaví hudbu
 
- function zastav(elementSelector) {
-    let audioElement = document.querySelector(elementSelector);
+function zastav(){
     audioElement.pause();
+}
+
+// Funkce, která ztiší zvuk
+function ztis(){
+    audioElement.volume = 0;
+}
+
+// Funkce, která nastaví střední hlasitost
+function hlasitostAkorat(){
+    audioElement.volume = 0.5;
+}
+
+// Funkce, která nastaví maximální hlasitost
+function hlasitostMax(){
+    audioElement.volume = 1;
+}
+
+// Funkce, která přehraje zvuk od začátku
+function prehrajOdZacatku(){
+    audioElement.currentTime = 0;
 }
