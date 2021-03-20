@@ -1,14 +1,5 @@
 // tady je místo pro náš program
 
-let nadpis = document.querySelector("h1");
-nadpis.classList.add("zluty");
-
-//nadpis.classList.remove('zluty');
-
-function secti(a, b) {
-    nadpis.innerHTML = a + b;
-}
-
 let lviOdstavec;
 lviOdstavec = document.querySelector(".muj_odstavec");
 
@@ -22,21 +13,17 @@ function zcervenej(){
 }
 
 // Funkce, která každým kliknutím přídá velikosti písma 1px
+let velikostPisma
+velikostPisma = parseInt("16px",10);
 
-
-/*function zvetsiPismo(){
-    lviOdstavec.style.fontSize="spocitej()+px";
+function zvetsiPismo(){
+    velikostPisma = 1 + velikostPisma;
+    /*console.log (velikostPisma);*/
+    lviOdstavec.style.fontSize=velikostPisma + "px";
+    return velikostPisma;     
 }
-*/
 
-
-/*
-let vetsiPismo
-vetsiPismo=document.querySelector()
-*/
-
-
-
+// Ukázání na audio nahrávku, se kterou se pracuje dále
 
 let audioElement = document.querySelector('#js-audio');
 
