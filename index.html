@@ -11,15 +11,28 @@
 
 	<h1>Změna tříd, události</h1>
 
-	<div class="ctverecek zluty"></div>
+	<div class="ctverecek zluty" onmouseover="secti(4,5)"></div>
 
-	<div class="ctverecek zeleny"></div>
+	<div class="ctverecek zeleny" onkeydown="console.log(event)"></div>
+
+	<input type="text" onkeyup="console.log(event)">
 
 	<img class="obrazek" src="obrazky/kocka.jpg">
 
 	<button class="tlacitko">Čudlajs</button>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
+	<button onclick="prehraj()">Přehraj písničku</button>
+
+	<button onclick="zastav('#js-audio')">Stopni písničku</button>
+
+	<p class="muj_odstavec" onmouseover="priNajeti()">V elipse spí lev.</p>
+
+	<button class="moje_tlacitko" onclick="zcervenej()">Červený po kliknutí</button>
+
+	<button class="zvetsovaci_tlacitko" onclick="zvetsiPismo()">Větší po kliknutí</button>
+
+	<script src="main.js"></script>
 </body>
 </html>

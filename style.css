@@ -121,3 +121,20 @@ li {
 	color: black;
 	border-color: blue;
 }
+
+.muj_odstavec {
+	font-size: 16px;
+	margin-top: 40px;
+}
+
+.tucne_pismo{
+	font-weight: bold;
+}
+
+.cervene_pismo{
+	color: rgb(216, 19, 19);
+}
+
+.vetsi_pismo{
+	font-size: 16px;
+}
